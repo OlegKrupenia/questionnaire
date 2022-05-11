@@ -2,10 +2,7 @@ package com.krupenia.questionnaire.domain;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Builder
 @AllArgsConstructor
@@ -31,7 +28,8 @@ public class Question {
     private String optionE;
     @Column(name = "correct_answer")
     private String correctAnswer;
-
+    @Transient
+    private String selectedAnswer;
 
 
     @Override

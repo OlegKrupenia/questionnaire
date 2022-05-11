@@ -1,0 +1,12 @@
+<form action="#"
+      th:action="@{/update/{id}(id=${question.questionId})}"
+      th:object="${question}"
+      method="post">
+    <p><span th:text="${question.question}"></span></p>
+    <p><span th:text="${question.optionA}"></span> <input type="checkbox" name="selectedAnswer" value="A"> </p>
+    <p><span th:text="${question.optionB}"></span> <input type="checkbox" name="selectedAnswer" value="B"> </p>
+    <p><span th:text="${question.optionC}"></span> <input type="checkbox" name="selectedAnswer" value="C"> </p>
+    <p><span th:text="${question.optionD}"></span> <input type="checkbox" name="selectedAnswer" value="D"> </p>
+    <p><span th:text="${question.optionE}"></span> <input type="checkbox" name="selectedAnswer" value="E"> </p>
+    <input type="submit" value="Select an option">
+</form>
