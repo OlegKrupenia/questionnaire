@@ -1,0 +1,42 @@
+<div th:switch="${questions}">
+    <h2 th:case="null">No users yet!</h2>
+    <div th:case="*">
+        <h2>Questions</h2>
+
+        <table>
+            <tr th:each="question: ${questions}">
+                <td>
+                    <b><label th:text="${question.question}"></label></b>
+                    <input type="checkbox" name="roles"
+                           th:text="${question.optionA}"
+                           th:value="${question.questionId}"
+                           th:field="*{questions}"
+                    />
+                    <input type="checkbox" name="roles"
+                           th:text="${question.optionB}"
+                           th:value="${question.questionId}"
+                           th:field="*{questions}"
+                    />
+                    <input type="checkbox" name="roles"
+                           th:text="${question.optionC}"
+                           th:value="${question.questionId}"
+                           th:field="*{questions}"
+                    />
+                    <input type="checkbox" name="roles"
+                           th:text="${question.optionD}"
+                           th:value="${question.questionId}"
+                           th:field="*{questions}"
+                    />
+                    <input type="checkbox" name="roles"
+                           th:text="${question.optionE}"
+                           th:value="${question.questionId}"
+                           th:field="*{questions}"
+                    />
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <p><a href="/signup">Add a new user</a></p>
+</div>

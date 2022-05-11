@@ -27,6 +27,8 @@ public class Question {
     private String optionC;
     @Column(name = "option_d")
     private String optionD;
+    @Column(name = "option_e")
+    private String optionE;
     @Column(name = "correct_answer")
     private String correctAnswer;
 
