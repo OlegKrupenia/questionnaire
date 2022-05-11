@@ -1,2 +1,7 @@
-package com.krupenia.questionnaire.services;public class QuestionService {
+package com.krupenia.questionnaire.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class QuestionService {
 }

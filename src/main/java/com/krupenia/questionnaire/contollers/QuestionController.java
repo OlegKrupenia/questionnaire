@@ -1,2 +1,7 @@
-package com.krupenia.questionnaire.contollers;public class QuestionContoller {
+package com.krupenia.questionnaire.contollers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class QuestionController {
 }
