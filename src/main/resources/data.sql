@@ -14,5 +14,5 @@ insert into questions values ( 2,
                                'C. are likely to be associated with one or more software architectures',
                                'D. all of the above',
                                'E. none of the above',
-                               'C'
+                               'D'
                              );
