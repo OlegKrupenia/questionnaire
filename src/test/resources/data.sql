@@ -4,5 +4,6 @@ insert into questions values ( 2,
                               'B.',
                               'C.',
                               'D.',
+                              'E',
                               'C'
 );
