@@ -44,7 +44,7 @@ public class QuestionController {
     public String updateUser(@PathVariable("id") int id, Question question,
                              Model model) {
         if (question.getCorrectAnswer().equals(question.getSelectedAnswer())) {
-            log.info("{} is correct \n", id);
+            log.info("{} is correct", id);
             successCounter++;
         } else {
             log.info("{} is wrong. Correct answer is {}\n", id, question.getCorrectAnswer());
